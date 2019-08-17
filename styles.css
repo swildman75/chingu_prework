@@ -8,6 +8,7 @@
 html {
     font-size: 20px;
     font-family: 'Raleway';
+   /* scroll-behavior: smooth;*/
 }
 
 /* Navbar */
@@ -337,6 +338,11 @@ textarea.form-control {
     height: auto;
 }
 
+textarea {
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -350,7 +356,12 @@ textarea.form-control {
 }
 
 .form-group-left {
-    margin-right: 175px;
+    margin-right: 165px;
+}
+
+.form-group-left input {
+    padding-left: 10px;
+
 }
 
 .form-group-right {
