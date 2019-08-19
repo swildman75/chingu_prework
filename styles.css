@@ -71,7 +71,7 @@ nav ul li a:hover {
 }
 
 /* Grid to stack on small screens */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
     .three-grid-column {
         grid-template-columns: 1fr;
     }
@@ -186,7 +186,7 @@ nav ul li a:hover {
 }
 
 /* Grid to stack on small screens */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
     .two-column-grid {
         grid-template-columns: 1fr;
     }
@@ -243,7 +243,7 @@ nav ul li a:hover {
 }
 
 /* Grid to stack on small screens */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
     .four-column-grid {
         grid-template-columns: 1fr;
     }
@@ -349,7 +349,7 @@ textarea {
 }
 
 /* Add Responsiveness for Small Screens */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 320px) {
     .contact-grid {
         grid-template-columns: 1fr;
     }
