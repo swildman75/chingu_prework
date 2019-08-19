@@ -75,6 +75,10 @@ nav ul li a:hover {
     .three-grid-column {
         grid-template-columns: 1fr;
     }
+    
+    .three-grid-images {
+        width: 100vw;
+    }
 }
 
 .three-grid-column div img {
