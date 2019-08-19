@@ -115,14 +115,11 @@ nav ul li a:hover {
 }
 
 /* Grid to stack on small screens */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .three-grid-column {
         grid-template-columns: 1fr;
     }
-    
-    .three-grid-images {
-        width: 100vw;
-    }
+
 }
 
 .three-grid-column div img {
@@ -148,6 +145,7 @@ nav ul li a:hover {
     background-color: #f2f2f2;
     width: 375px;
     padding-bottom: 25px;
+    
 }
 
 #parallax-layout {
@@ -234,7 +232,7 @@ nav ul li a:hover {
 }
 
 /* Grid to stack on small screens */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
     .two-column-grid {
         grid-template-columns: 1fr;
     }
@@ -297,6 +295,12 @@ nav ul li a:hover {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .four-column-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .four-grid-images img {
     max-width: 250px;
     
@@ -328,11 +332,11 @@ nav ul li a:hover {
 }
 
 .countryside-image {
-    width: 1000px;
+    width: 100%;
 }
 
 .one-grid-image {
-    width: 1000px;
+    width: 100%;
     background-color: #f2f2f2;
     padding-bottom: 30px;
 }
