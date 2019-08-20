@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -35,7 +36,7 @@ html {
   }
   
   /* [ON SMALL SCREENS] */
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 650px){
     /* Show Hamburger */
     #page-nav label {
       display: inline-block;
@@ -122,9 +123,10 @@ nav ul li a:hover {
 
 }
 
-.three-grid-column div img {
-    width: 375px;
-    height: 185px;
+@media screen and (max-width: 320px) {
+    .three-grid-images img {
+        width: 65%;
+    }
 }
 
 #no-bootstrap {
@@ -143,9 +145,7 @@ nav ul li a:hover {
 .three-grid-images {
     text-align: center;
     background-color: #f2f2f2;
-    width: 375px;
     padding-bottom: 25px;
-    
 }
 
 #parallax-layout {
@@ -228,7 +228,7 @@ nav ul li a:hover {
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
     margin-top: 60px;
-    justify-items: center;
+    
 }
 
 /* Grid to stack on small screens */
@@ -236,16 +236,18 @@ nav ul li a:hover {
     .two-column-grid {
         grid-template-columns: 1fr;
     }
-}
 
-.grid-image {
-    max-width: 500px;
+    .two-grid-images {
+        margin-top: 40px;
+              
+    }
 }
 
 .two-grid-images {
     background-color: #f2f2f2;
-    max-width: 500px;
     padding-bottom: 25px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .two-grid-images h3, .two-grid-images p {
@@ -289,15 +291,20 @@ nav ul li a:hover {
 }
 
 /* Grid to stack on small screens */
-@media screen and (max-width: 320px) {
-    .four-column-grid {
-        grid-template-columns: 1fr;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .four-column-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .four-grid-images {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .four-column-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -320,7 +327,7 @@ nav ul li a:hover {
     text-align: center;
     color: #806666;
     max-width: 250px;
-    padding: 20px;
+    padding-bottom: 15px;
 }
 
 /* One Column Grid */
@@ -358,6 +365,7 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    width: 100vw;
     margin-top: 60px;
 }
 
